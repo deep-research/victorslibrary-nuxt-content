@@ -1,66 +1,83 @@
 <template>
-  <div>
-    <div class="site-title">
+  <div class="layout">
+    <header>
       <NuxtLink to="/">Victor's Library</NuxtLink>
+    </header>
+
+    <div class="content">
+      <slot />
     </div>
-    <slot />
-    <div class="footer">
+
+    <footer>
       <p>© {{ new Date().getFullYear() }} Victor Fisher</p>
-    </div>
+    </footer>
   </div>
 </template>
 
 <style>
-@import url('../public/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+  @import url('../public/normalize.css');
 
-.site-title {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
-.site-title a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Merienda', cursive;
-  font-size: 2.25rem;
-}
+  header {
+    text-align: center;
+  }
 
-p, li, a {
-  font-family: 'Lora', serif;
-  line-height: 2;
-}
+  header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Merienda', cursive;
+    font-size: 2.25rem;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0
-}
+  p, li, a {
+    font-family: 'Lora', serif;
+    line-height: 2;
+  }
 
-body {
-  max-width: 750px;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0
+  }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+  footer {
+    text-align: center;
+    font-family: Georgia, serif;
 
-.footer p {
-  font-family: Georgia, serif;
-  font-size: 1rem;
-}
+    position: sticky;
+    top: 100%;
+  }
 
-::selection {
-  background: #a8d1ff; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #a8d1ff; /* Gecko Browsers */
-}
+  body {
+    max-width: 750px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  #__nuxt, .layout, body {
+    min-height: 100vh;
+  }
+
+  .layout { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex:1 0 auto;
+  }
+
+  ::selection {
+    background: #a8d1ff; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #a8d1ff; /* Gecko Browsers */
+  }
 </style>
