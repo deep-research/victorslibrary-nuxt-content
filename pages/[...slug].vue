@@ -3,8 +3,10 @@
     <main>
       <ContentDoc>
         <template #empty>
-          <h1>Not Found</h1>
-          <NuxtLink to="/">Home Page</NuxtLink>
+          <h1>Document is empty</h1>
+          <p>
+            <NuxtLink to="/">Home Page</NuxtLink>
+          </p>
         </template>
       </ContentDoc>
     </main>

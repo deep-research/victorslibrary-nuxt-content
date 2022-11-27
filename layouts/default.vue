@@ -11,6 +11,7 @@
 </template>
 
 <style>
+@import url('../public/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
@@ -54,5 +55,12 @@ body {
 .footer p {
   font-family: Georgia, serif;
   font-size: 1rem;
+}
+
+::selection {
+  background: #a8d1ff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #a8d1ff; /* Gecko Browsers */
 }
 </style>
