@@ -43,11 +43,13 @@
   }
 
   footer {
-    text-align: center;
-    font-family: Georgia, serif;
-
     position: sticky;
     top: 100%;
+  }
+
+  footer p {
+    text-align: center;
+    font-family: Georgia, serif;
   }
 
   body {
