@@ -1,9 +1,5 @@
-# Nuxt Content
+# Home Page
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
-
----
-
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+[About Page](/about)
