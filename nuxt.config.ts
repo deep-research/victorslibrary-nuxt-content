@@ -3,5 +3,15 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   content: {
     documentDriven: true
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: './water.css'
+        }
+      ]
+    }
   }
 })
