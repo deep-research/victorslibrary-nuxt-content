@@ -4,14 +4,4 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true
   },
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: './water.css'
-        }
-      ]
-    }
-  }
 })
