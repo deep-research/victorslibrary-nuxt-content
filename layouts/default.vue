@@ -16,7 +16,7 @@
   font-size: 2.25rem;
 }
 
-p, li {
+p, li, a {
   font-family: 'Lora', serif;
   line-height: 2;
 }
