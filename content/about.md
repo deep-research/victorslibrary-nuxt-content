@@ -1,9 +1,3 @@
----
-layout: custom
----
+# About Content v2
 
-# About
-
-This page is using the `layouts/custom.vue` layout.
-
-[Back home](/)
+[Home page](/)
