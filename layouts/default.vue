@@ -1,12 +1,14 @@
 <template>
   <div class="layout">
     <header>
-      <NuxtLink to="/">Victor's Library</NuxtLink>
+      <NuxtLink class="site-title" to="/">Victor's Library</NuxtLink>
     </header>
 
-    <div class="content">
-      <slot />
-    </div>
+    <main class="content">
+      <div class="center">
+        <slot />
+      </div>
+    </main>
 
     <footer class="footer">
       <p>© {{ new Date().getFullYear() }} Victor Fisher</p>
@@ -16,15 +18,16 @@
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
   header {
     text-align: center;
+    margin-top: 16px;
   }
-
-  header a {
+  .site-title {
     text-decoration: none;
     color: black;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-family: 'Merienda', cursive;
   }
 
@@ -35,21 +38,30 @@
   #__nuxt, .layout, body {
     min-height: 100vh;
   }
+  
   .layout { 
     display: flex;
     flex-direction: column;
-    max-width: 800px;
-    margin: auto;
-    padding: 0 15px 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
+
   .content {
     flex:1 0 auto;
+    /* 50 - 75 is readable https://baymard.com/blog/line-length-readability */
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .center {
+    max-width: 75ch;
+    margin: auto;
   }
 
   ::selection {
-    background: #a8d1ff; /* WebKit/Blink Browsers */
+    background: lightblue; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #a8d1ff; /* Gecko Browsers */
+    background: lightblue; /* Gecko Browsers */
   }
 </style>
