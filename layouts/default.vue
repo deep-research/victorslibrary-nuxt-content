@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
   @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
@@ -63,5 +63,10 @@
   }
   ::-moz-selection {
     background: lightblue; /* Gecko Browsers */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 </style>
