@@ -1,3 +1,3 @@
-# About Page
+# About
 
 [Home Page](/)

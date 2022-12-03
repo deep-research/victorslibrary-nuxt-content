@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   content: {
-    documentDriven: true
+    documentDriven: true,
+    anchorLinks: false
   },
   app: {
     head: {
